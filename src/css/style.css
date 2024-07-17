@@ -1,0 +1,87 @@
+body {
+    background-image: url('https://images-assets.nasa.gov/image/PIA09178/PIA09178~medium.jpg');
+    background-size: cover;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin-top: 6%;
+}
+
+#search-btn {
+    background-color: rgba(66, 66, 80, 0.5);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 6%;
+}
+
+#search-btn:hover {
+    background-color: #62666b;
+}
+
+.image-info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.navbar-logo img {
+    height: 50px; 
+}
+
+.navbar-links a,
+.navbar-buttons button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white; 
+    font-size: 25px;
+    font-weight: bold;
+
+}
