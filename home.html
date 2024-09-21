@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Nebulosas</title>
+  <link rel="stylesheet" href="src/css/style-home.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Explorar Nebulosas</h1>
+      <input type="text" id="search-input" placeholder="Buscar por índice...">
+      <button id="search-btn">Buscar</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contêiner de grade para exibir as imagens -->
+    <div id="grid-container" class="grid-container"></div>
+    
+    <!-- Informações da imagem (título e ID) -->
+    <div id="image-info"></div>
+  </main>
+
+  <!-- Modal para exibição ampliada -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+
+  <script src="src/javascript/script-grid.js"></script>
+</body>
+</html>

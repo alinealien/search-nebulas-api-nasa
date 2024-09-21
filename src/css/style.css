@@ -1,7 +1,6 @@
 body {
     background-image: url('https://images-assets.nasa.gov/image/PIA09178/PIA09178~medium.jpg');
     background-size: cover;
-    background-color: black;
     background-position: center center;
     background-repeat: no-repeat;
     overflow: auto;
@@ -12,6 +11,65 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.login-form {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .signup-question {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-question a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .signup-question a:hover {
+    text-decoration: underline;
+  }
 
 .search-container {
     display: flex;
