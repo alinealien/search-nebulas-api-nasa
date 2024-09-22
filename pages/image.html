@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Nebulosa</title>
+    <link rel="stylesheet" href="../src/css/style-image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+        
+                <div class="navbar-links">
+                    <a href="/index.html">Home</a>
+                    <a href="home.html">Nebulas</a>
+                    <a href="about.html">Sobre</a>
+                </div>
+               <!--<div class="search-container">
+                <input type="text" id="search-input" placeholder="Insira um ID">
+                <button id="search-btn">Buscar</button>-->
+            </nav>
+         
+    </header>
+
+    <main>
+        <!--<h1>Detalhes da Imagem</h1>-->
+        <!-- Contêiner para exibir a imagem selecionada e informações lado a lado -->
+        <div id="image-container" class="image-container">
+            <img id="selected-image" alt="Imagem Nebulosa">
+            <!-- Ícones de coração e salvar 
+            <div class="icon-container">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-save"></i>
+            </div>-->
+            <div id="image-info" class="image-info"></div>
+        </div>
+    
+        <!-- Mais imagens para explorar -->
+        <h2>Mais para explorar</h2>
+        <div id="explore-more" class="grid-container"></div>
+    </main>
+
+    <script src="../src/javascript/image-details.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var navbar = document.querySelector(".navbar");
+            var lastScrollTop = 0;
+        
+            window.addEventListener("scroll", function() {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+                if (scrollTop > lastScrollTop) {
+                    // Rolando para baixo
+                    navbar.classList.add("navbar-hidden");
+                } else {
+                    // Rolando para cima
+                    navbar.classList.remove("navbar-hidden");
+                }
+        
+                lastScrollTop = scrollTop;
+            });
+        });
+        </script>
+</body>
+</html>

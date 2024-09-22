@@ -13,33 +13,40 @@ body {
 }
 
 .login-form {
-    width: 300px;
+    width: 10%;
     margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 35px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center;
+    
   
   }
+
+
   
   .form-group {
     margin-bottom: 15px;
-    
+
   }
   
   label {
     display: block;
     font-size: 14px;
     color: #333;
+    
   }
+
   
   input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    
   }
   
   .login-btn {
@@ -84,10 +91,11 @@ body {
     font-size: 16px;
     border: none;
     border-radius: 5px 0 0 5px;
-    width: 300px;
+    width: 400px;
     outline: none;
     background-color: rgb(255, 255, 255, 0.5);
     margin-top: 6%;
+    align-items: center;
 }
 
 #search-btn {
@@ -128,6 +136,10 @@ body {
     color: white;
     z-index: 1000;
     padding: 10px 20px;
+    margin-bottom: 50%;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(193, 193, 193, 0.2);
+    border: 1px solid rgba(68, 68, 68, 0.5);
 }
 
 .navbar-logo img {

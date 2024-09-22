@@ -1,41 +1,103 @@
 /* Estilos para a página de detalhes */
 body{
   background-color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   
 }
-h1{
-  color: rgb(195, 195, 195);
-}
-h2{
-  color: rgb(195, 195, 195);
+
+/*.image-details {
+  line-height: 1.9;
+  max-width: 800px; 
+  margin: 20px auto;  
+  padding: 30px;
+  background-color: rgba(65, 65, 65, 0.2); 
+  border-radius: 8px;
+}*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(17, 76, 83, 0.1);
+  /*background-color: rgba(193, 193, 193, 0.4);*/ 
+  border: 1px solid rgba(68, 68, 68, 0.5);
 }
 
+
+.navbar-links a,
+.navbar-buttons button {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white; 
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+h1{
+  color: rgb(195, 195, 195);
+  padding: 1%;
+  margin-bottom: 0%;
+}
+
+h2{
+  color: rgb(195, 195, 195);
+  align-items: center;
+  text-align: center;
+}
+
+
 .image-container {
-  display: flex; /* Alinha os elementos lado a lado */
-  padding: 20px;
+  display: flex;  
   color: rgb(167, 167, 167);
   font-size: 20px;
-  border: 1px solid rgb(167, 167, 167);
-  border-radius: 10px;
-  align-items: center;
-  justify-content: space-between;
+  padding: 30px;
+  margin-top: 1%;
+  line-height: 1.7;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(17, 76, 83, 0.1);
+  max-width: 1300px; 
+  margin: 4% auto;
 }
 
 .image-info {
-  max-width: 40%; 
+  max-width: 100%; 
   display: flex;
   flex-direction: column;
-
+  padding-left: 1%;
 
 }
+
+.navbar-hidden {
+  display: none;
+}
+
   
 #selected-image {
-  max-width: 30%;
+  max-width: 50%;
   height: auto;
   margin-bottom: 10px;
   box-shadow: 0px 0px 15px rgba(109, 106, 110, 0.5);
-  border-radius: 10px;
+  border-radius: 10px; 
+  flex-shrink: 0; 
 }
+
+.icon-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 
 /* Estilos para o grid "Mais para explorar" */
 .grid-container {
